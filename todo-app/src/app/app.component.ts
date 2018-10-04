@@ -11,6 +11,6 @@ export class AppComponent {
     
   addTodo(value){
     this.todoArray.push(value)
-    console.log(this.todo)
+    console.log(value)  
   }
 }
