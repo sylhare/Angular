@@ -13,4 +13,8 @@ export class AppComponent {
     this.todoArray.push(value)
     console.log(value)  
   }
+    
+  deleteItem(){
+   console.log("delete item")
+  }    
 }

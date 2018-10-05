@@ -7,12 +7,12 @@
                 <span class="input-group-text" (click)="addTodo(todo.value)"><i class="material-icons">add</i></span>
             </div>
         </div>
-    </form>
-    <div class="data">
+        <div class="data">
         <ul class="list-instyled">
             <li *ngFor="let todo of todoArray">{{todo}}
-                <i class="material-icons">delete</i>
+                <i (click)="deleteItem(todo)" class="material-icons">delete</i>
             </li>
         </ul>
     </div>
+    </form>
 </div>
