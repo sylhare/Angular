@@ -11,14 +11,10 @@ export class AppComponent {
     
   addTodo(value){
     this.todoArray.push(value)
-    console.log(value)  
+    console.log(this.todoArray)  
   }
     
   deleteItem(todo){
-   for(let i=0 ;i<= this.todoArray.length ;i++){
-    if(todo== this.todoArray[i]){
-     this.todoArray.splice(i,1)
-    }
-   }
-  } 
+    this.todoArray = this.todoArray.filter(value => value !== todo);  
+  }  
 }
