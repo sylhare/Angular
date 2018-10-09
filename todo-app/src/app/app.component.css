@@ -1,41 +1,54 @@
 /*Google fonts*/
+
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-body{
- padding: 0;
- margin: 0;
+body {
+    padding: 0;
+    margin: 0;
 }
-form{
- max-width: 30em;
- margin: 4em auto;
- position: relative;
- background: #f4f4f4;
- padding: 2em 3em;
+
+form {
+    max-width: 30em;
+    margin: 4em auto;
+    position: relative;
+    background: #f4f4f4;
+    padding: 2em 3em;
 }
-form h1{
+
+form h1 {
     font-family: "Raleway";
-    color:#F97300; 
+    color: #F97300 !important;
 }
-form input[type=text]::placeholder{
-   font-family: "Raleway";
-   color:#666; 
+
+form input[type=text]::placeholder {
+    font-family: "Raleway";
+    color: #666;
 }
-form .data{
+
+form .data {
     margin-top: 1em;
 }
-form .data li{
- background: #fff;
- border-left: 4px solid #F97300;
- padding: 1em;
- margin: 1em auto;
- color: #666;
- font-family: "Raleway";
+
+ul {
+    list-style-type:none;
+    padding-left: 0;
 }
-form .data li i{
+
+form .data li {
+    background: #fff;
+    border-left: 4px solid #F97300;
+    padding: 1em;
+    margin: 1em auto;
+    color: #666;
+    font-family: "Raleway";
+}
+
+form .data li i {
     float: right;
     color: #888;
     cursor: pointer;
 }
-form .input-group-text{
+
+form .input-group-text {
     background: #F97300;
     border-radius: 50%;
     width: 5em;
@@ -47,13 +60,16 @@ form .input-group-text{
     top: 68px;
     cursor: pointer;
 }
-form .input-group-text i{
+
+form .input-group-text i {
     font-size: 2em;
 }
-form .form-control{
- height: 3em;
+
+form .form-control {
+    height: 3em;
     font-family: "Raleway";
 }
-form .form-control:focus{
- box-shadow: 0;
+
+form .form-control:focus {
+    box-shadow: 0;
 }
