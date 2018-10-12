@@ -17,4 +17,14 @@ export class AppComponent {
   deleteItem(todo){
     this.todoArray = this.todoArray.filter(value => value !== todo);  
   }  
+    
+  todoSubmit(value:any){
+     if(value!==""){
+    this.todoArray.push(value.todo)
+     //this.todoForm.reset()
+    }else{
+      alert('Field required **')
+    }
+    
+  }
 }
